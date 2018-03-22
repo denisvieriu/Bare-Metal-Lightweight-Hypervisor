@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E22546A7-B3C3-4021-94CC-759D3B6737FE}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\ApiTestDebug\</OutDir>
+    <IntDir>.\ApiTestDebug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\ApiTest\</OutDir>
+    <IntDir>.\ApiTest\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>.\ApiTest\Debug/ApiTest.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WIN32_LEAN_AND_MEAN;_CONSOLE;ACPI_EXEC_APP;ACPI_LIBRARY;ACPI_APITS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <PrecompiledHeaderOutputFile>.\ApiTestDebug\ApiTest.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ApiTestDebug\</AssemblerListingLocation>
+      <ObjectFileName>.\ApiTestDebug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ApiTestDebug\</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Command>if NOT EXIST ..\..\libraries mkdir ..\..\libraries</Command>
+    </PreLinkEvent>
+    <Link>
+      <OutputFile>.\ApiTestDebug\ApiTestDebug.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\ApiTestDebug\ApiTestDebug.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\ApiTestDebug\ApiTestDebug.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copy ApiTestDebug.exe to Libraries (DEBUG)</Message>
+      <Command>copy apitestdebug\apitestdebug.exe ..\..\libraries\ApiTestDebug.exe
+dir ..\..\libraries\ApiTestdebug.exe
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\ApiTest\NoDebug/ApiTest.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_CONSOLE;ACPI_EXEC_APP;ACPI_LIBRARY;ACPI_APITS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <PrecompiledHeaderOutputFile>.\ApiTest\ApiTest.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ApiTest\</AssemblerListingLocation>
+      <ObjectFileName>.\ApiTest\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ApiTest\</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CallingConvention>FastCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Command>if NOT EXIST ..\..\libraries mkdir ..\..\libraries</Command>
+    </PreLinkEvent>
+    <Link>
+      <OutputFile>.\ApiTest\ApiTest.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\ApiTest\ApiTest.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\ApiTest\ApiTest.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copy ApiTest.exe to Libraries</Message>
+      <Command>copy apitest\apitest.exe ..\..\libraries\ApiTest.exe
+dir ..\..\libraries\ApiTest.exe
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\common\ahids.c" />
+    <ClCompile Include="..\..\source\common\ahuuids.c" />
+    <ClCompile Include="..\..\source\common\cmfsize.c" />
+    <ClCompile Include="..\..\source\common\dmtbinfo.c" />
+    <ClCompile Include="..\..\source\common\getopt.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\DEBUGGER\dbcmds.c" />
+    <ClCompile Include="..\..\source\components\debugger\dbconvert.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\DEBUGGER\dbdisply.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\DEBUGGER\dbexec.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\DEBUGGER\dbfileio.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\DEBUGGER\dbhistry.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\DEBUGGER\dbinput.c" />
+    <ClCompile Include="..\..\source\components\debugger\dbmethod.c" />
+    <ClCompile Include="..\..\source\components\debugger\dbnames.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\DEBUGGER\dbstats.c" />
+    <ClCompile Include="..\..\source\components\debugger\dbtest.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\DEBUGGER\dbutils.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\DEBUGGER\dbxface.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\Disassembler\dmbuffer.c" />
+    <ClCompile Include="..\..\source\components\disassembler\dmcstyle.c" />
+    <ClCompile Include="..\..\source\components\disassembler\dmdeferred.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\Disassembler\dmnames.c" />
+    <ClCompile Include="..\..\SOURCE\COMPONENTS\disassembler\dmobject.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\Disassembler\dmopcode.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\Disassembler\dmresrc.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\Disassembler\dmresrcl.c" />
+    <ClCompile Include="..\..\source\components\disassembler\dmresrcl2.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\Disassembler\dmresrcs.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\Disassembler\dmutils.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\Disassembler\dmwalk.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dsargs.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dscontrol.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dsfield.c" />
+    <ClCompile Include="..\..\source\components\DISPATCHER\dsinit.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dsmethod.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dsmthdat.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dsobject.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dsopcode.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dsutils.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dswexec.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dswload.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dswload2.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dswscope.c" />
+    <ClCompile Include="..\..\source\components\dispatcher\dswstate.c" />
+    <ClCompile Include="..\..\source\components\events\evevent.c" />
+    <ClCompile Include="..\..\source\components\events\evglock.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\EVENTS\evgpe.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\EVENTS\evgpeblk.c" />
+    <ClCompile Include="..\..\source\components\events\evgpeinit.c" />
+    <ClCompile Include="..\..\source\components\events\evgpeutil.c" />
+    <ClCompile Include="..\..\source\components\events\evhandler.c" />
+    <ClCompile Include="..\..\source\components\events\evmisc.c" />
+    <ClCompile Include="..\..\source\components\events\evregion.c" />
+    <ClCompile Include="..\..\source\components\events\evrgnini.c" />
+    <ClCompile Include="..\..\source\components\events\evsci.c" />
+    <ClCompile Include="..\..\source\components\events\evxface.c" />
+    <ClCompile Include="..\..\source\components\events\evxfevnt.c" />
+    <ClCompile Include="..\..\source\components\events\evxfgpe.c" />
+    <ClCompile Include="..\..\source\components\events\evxfregn.c" />
+    <ClCompile Include="..\..\source\components\executer\exconfig.c" />
+    <ClCompile Include="..\..\source\components\executer\exconvrt.c" />
+    <ClCompile Include="..\..\source\components\executer\excreate.c" />
+    <ClCompile Include="..\..\source\components\executer\exdebug.c" />
+    <ClCompile Include="..\..\source\components\executer\exdump.c" />
+    <ClCompile Include="..\..\source\components\executer\exfield.c" />
+    <ClCompile Include="..\..\source\components\executer\exfldio.c" />
+    <ClCompile Include="..\..\source\components\executer\exmisc.c" />
+    <ClCompile Include="..\..\source\components\executer\exmutex.c" />
+    <ClCompile Include="..\..\source\components\executer\exnames.c" />
+    <ClCompile Include="..\..\source\components\executer\exoparg1.c" />
+    <ClCompile Include="..\..\source\components\executer\exoparg2.c" />
+    <ClCompile Include="..\..\source\components\executer\exoparg3.c" />
+    <ClCompile Include="..\..\source\components\executer\exoparg6.c" />
+    <ClCompile Include="..\..\source\components\executer\exprep.c" />
+    <ClCompile Include="..\..\source\components\executer\exregion.c" />
+    <ClCompile Include="..\..\source\components\executer\exresnte.c" />
+    <ClCompile Include="..\..\source\components\executer\exresolv.c" />
+    <ClCompile Include="..\..\source\components\executer\exresop.c" />
+    <ClCompile Include="..\..\source\components\executer\exstore.c" />
+    <ClCompile Include="..\..\source\components\executer\exstoren.c" />
+    <ClCompile Include="..\..\source\components\executer\exstorob.c" />
+    <ClCompile Include="..\..\source\components\executer\exsystem.c" />
+    <ClCompile Include="..\..\source\components\executer\exutils.c" />
+    <ClCompile Include="..\..\source\components\hardware\hwacpi.c" />
+    <ClCompile Include="..\..\source\components\hardware\hwesleep.c" />
+    <ClCompile Include="..\..\source\components\hardware\hwgpe.c" />
+    <ClCompile Include="..\..\source\components\hardware\hwpci.c" />
+    <ClCompile Include="..\..\source\components\hardware\hwregs.c" />
+    <ClCompile Include="..\..\Source\components\hardware\hwsleep.c" />
+    <ClCompile Include="..\..\source\components\hardware\hwtimer.c" />
+    <ClCompile Include="..\..\source\components\hardware\hwvalid.c" />
+    <ClCompile Include="..\..\source\components\hardware\hwxface.c" />
+    <ClCompile Include="..\..\source\components\hardware\hwxfsleep.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsaccess.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsalloc.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsarguments.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsconvert.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsdump.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\NAMESPACE\nsdumpdv.c" />
+    <ClCompile Include="..\..\source\components\namespace\nseval.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsinit.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsload.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsnames.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsobject.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\NAMESPACE\nsparse.c" />
+    <ClCompile Include="..\..\source\components\namespace\nspredef.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsprepkg.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsrepair.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsrepair2.c" />
+    <ClCompile Include="..\..\source\components\namespace\nssearch.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsutils.c" />
+    <ClCompile Include="..\..\source\components\namespace\nswalk.c" />
+    <ClCompile Include="..\..\source\COMPONENTS\NAMESPACE\nsxfeval.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsxfname.c" />
+    <ClCompile Include="..\..\source\components\namespace\nsxfobj.c" />
+    <ClCompile Include="..\..\source\components\parser\psargs.c" />
+    <ClCompile Include="..\..\source\components\parser\psloop.c" />
+    <ClCompile Include="..\..\source\components\parser\psobject.c" />
+    <ClCompile Include="..\..\source\components\parser\psopcode.c" />
+    <ClCompile Include="..\..\source\components\parser\psopinfo.c" />
+    <ClCompile Include="..\..\source\components\parser\psparse.c" />
+    <ClCompile Include="..\..\source\components\parser\psscope.c" />
+    <ClCompile Include="..\..\source\components\parser\pstree.c" />
+    <ClCompile Include="..\..\source\components\parser\psutils.c" />
+    <ClCompile Include="..\..\source\components\parser\pswalk.c" />
+    <ClCompile Include="..\..\source\components\parser\psxface.c" />
+    <ClCompile Include="..\..\source\components\resources\rsaddr.c" />
+    <ClCompile Include="..\..\source\components\resources\rscalc.c" />
+    <ClCompile Include="..\..\source\components\resources\rscreate.c" />
+    <ClCompile Include="..\..\source\components\resources\rsdump.c" />
+    <ClCompile Include="..\..\source\components\resources\rsdumpinfo.c" />
+    <ClCompile Include="..\..\source\components\resources\rsinfo.c" />
+    <ClCompile Include="..\..\source\components\resources\rsio.c" />
+    <ClCompile Include="..\..\source\components\resources\rsirq.c" />
+    <ClCompile Include="..\..\source\components\resources\rslist.c" />
+    <ClCompile Include="..\..\source\components\resources\rsmemory.c" />
+    <ClCompile Include="..\..\source\components\resources\rsmisc.c" />
+    <ClCompile Include="..\..\source\components\resources\rsserial.c" />
+    <ClCompile Include="..\..\source\components\resources\rsutils.c" />
+    <ClCompile Include="..\..\source\components\resources\rsxface.c" />
+    <ClCompile Include="..\..\source\components\tables\tbdata.c" />
+    <ClCompile Include="..\..\source\components\tables\tbfadt.c" />
+    <ClCompile Include="..\..\source\components\tables\tbfind.c" />
+    <ClCompile Include="..\..\source\components\tables\tbinstal.c" />
+    <ClCompile Include="..\..\source\components\tables\tbprint.c" />
+    <ClCompile Include="..\..\source\components\tables\tbutils.c" />
+    <ClCompile Include="..\..\source\components\tables\tbxface.c" />
+    <ClCompile Include="..\..\source\components\tables\tbxfload.c" />
+    <ClCompile Include="..\..\source\components\tables\tbxfroot.c" />
+    <ClCompile Include="..\..\source\components\utilities\utaddress.c" />
+    <ClCompile Include="..\..\source\components\utilities\utalloc.c" />
+    <ClCompile Include="..\..\source\components\utilities\utbuffer.c" />
+    <ClCompile Include="..\..\source\components\utilities\utcache.c" />
+    <ClCompile Include="..\..\source\components\utilities\utclib.c" />
+    <ClCompile Include="..\..\source\components\utilities\utcopy.c" />
+    <ClCompile Include="..\..\source\components\utilities\utdebug.c" />
+    <ClCompile Include="..\..\source\components\utilities\utdecode.c" />
+    <ClCompile Include="..\..\source\components\utilities\utdelete.c" />
+    <ClCompile Include="..\..\source\components\utilities\uterror.c" />
+    <ClCompile Include="..\..\source\components\utilities\uteval.c" />
+    <ClCompile Include="..\..\source\components\utilities\utexcep.c" />
+    <ClCompile Include="..\..\source\components\utilities\utfileio.c" />
+    <ClCompile Include="..\..\source\components\utilities\utglobal.c" />
+    <ClCompile Include="..\..\source\components\utilities\uthex.c" />
+    <ClCompile Include="..\..\source\components\utilities\utids.c" />
+    <ClCompile Include="..\..\source\components\utilities\utinit.c" />
+    <ClCompile Include="..\..\source\components\utilities\utlock.c" />
+    <ClCompile Include="..\..\source\components\utilities\utmath.c" />
+    <ClCompile Include="..\..\source\components\utilities\utmisc.c">
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DisableLanguageExtensions>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">All</AssemblerOutput>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utmutex.c" />
+    <ClCompile Include="..\..\source\components\utilities\utobject.c" />
+    <ClCompile Include="..\..\source\components\utilities\utosi.c" />
+    <ClCompile Include="..\..\source\components\utilities\utownerid.c" />
+    <ClCompile Include="..\..\source\components\utilities\utpredef.c" />
+    <ClCompile Include="..\..\source\components\utilities\utprint.c" />
+    <ClCompile Include="..\..\source\components\utilities\utresrc.c" />
+    <ClCompile Include="..\..\source\components\utilities\utstate.c" />
+    <ClCompile Include="..\..\source\components\utilities\utstring.c" />
+    <ClCompile Include="..\..\source\components\utilities\uttrack.c" />
+    <ClCompile Include="..\..\source\components\utilities\utuuid.c" />
+    <ClCompile Include="..\..\source\components\utilities\utxface.c" />
+    <ClCompile Include="..\..\source\components\utilities\utxferror.c" />
+    <ClCompile Include="..\..\source\components\utilities\utxfinit.c" />
+    <ClCompile Include="..\..\source\os_specific\service_layers\oslibcfs.c" />
+    <ClCompile Include="..\..\tests\aapits\atexec.c" />
+    <ClCompile Include="..\..\tests\aapits\atfixedevent.c" />
+    <ClCompile Include="..\..\tests\aapits\atgpe.c" />
+    <ClCompile Include="..\..\tests\aapits\athandlers.c" />
+    <ClCompile Include="..\..\tests\aapits\athardware.c" />
+    <ClCompile Include="..\..\tests\aapits\atinit.c" />
+    <ClCompile Include="..\..\tests\aapits\atmain.c" />
+    <ClCompile Include="..\..\tests\aapits\atmemory.c" />
+    <ClCompile Include="..\..\tests\aapits\atnamespace.c" />
+    <ClCompile Include="..\..\tests\aapits\atosxfctrl.c" />
+    <ClCompile Include="..\..\tests\aapits\atosxfwrap.c" />
+    <ClCompile Include="..\..\tests\aapits\atresource.c" />
+    <ClCompile Include="..\..\tests\aapits\attable.c" />
+    <ClCompile Include="..\..\tests\aapits\oswinxf.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\tests\aapits\atcommon.h" />
+    <ClInclude Include="..\..\tests\aapits\atfixedevent.h" />
+    <ClInclude Include="..\..\tests\aapits\atgpe.h" />
+    <ClInclude Include="..\..\tests\aapits\athandlers.h" />
+    <ClInclude Include="..\..\tests\aapits\athardware.h" />
+    <ClInclude Include="..\..\tests\aapits\atinit.h" />
+    <ClInclude Include="..\..\tests\aapits\atmemory.h" />
+    <ClInclude Include="..\..\tests\aapits\atnamespace.h" />
+    <ClInclude Include="..\..\tests\aapits\atosxfctrl.h" />
+    <ClInclude Include="..\..\tests\aapits\atosxfwrap.h" />
+    <ClInclude Include="..\..\tests\aapits\atresource.h" />
+    <ClInclude Include="..\..\tests\aapits\attable.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a0fb0b87-a14b-4b0c-92fd-2f1a6ac4cdde}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AcpiDump">
+      <UniqueIdentifier>{86a6c955-a89b-4fed-bb1a-154668856076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{1d8cb7e0-aa58-44d8-9893-417b0ffbdd6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{29c68c0b-6603-486d-8b97-fd2f25e5bcb6}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Tables">
+      <UniqueIdentifier>{785c5428-5a3a-4292-8e1d-1c0ef1ecf28d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3ddb27c1-14fb-4783-8777-ee12e2559505}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\tools\acpidump\apdump.c">
+      <Filter>Source Files\AcpiDump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\acpidump\apfiles.c">
+      <Filter>Source Files\AcpiDump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\acpidump\apmain.c">
+      <Filter>Source Files\AcpiDump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\cmfsize.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Common\getopt.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\service_layers\oslibcfs.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\service_layers\oswintbl.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\service_layers\oswinxf.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utbuffer.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utdebug.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utexcep.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utglobal.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utmath.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utprint.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utstring.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utxferror.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbprint.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbxfroot.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\tools\acpidump\acpidump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

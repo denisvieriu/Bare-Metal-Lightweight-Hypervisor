@@ -1,0 +1,697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ACPICA Source Files">
+      <UniqueIdentifier>{9a026084-c460-4379-aada-b45554f1a224}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="ACPICA Source Files\Utilities">
+      <UniqueIdentifier>{36788de2-c229-4028-bf0a-9f5b5461e337}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="ACPICA Source Files\Namespace">
+      <UniqueIdentifier>{47cbfe78-2b52-4ebc-8c33-7883bcc6e1dc}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="ACPICA Source Files\Disassembler">
+      <UniqueIdentifier>{7dc33526-7113-4272-8dea-134ca48f277b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ACPICA Source Files\Tables">
+      <UniqueIdentifier>{df468fa3-a518-42fd-95ae-5890bd03fb18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ACPICA Source Files\Interpreter">
+      <UniqueIdentifier>{c9ae710d-4648-4246-88f1-71a11088fb9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ACPICA Source Files\Parser">
+      <UniqueIdentifier>{d3ff11bb-3f1a-4b60-b762-5d729891b1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ACPICA Source Files\Dispatcher">
+      <UniqueIdentifier>{68c160b5-9efb-422c-b504-b1401581c77d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ACPICA Source Files\Common">
+      <UniqueIdentifier>{f343b906-93fa-433b-a0c5-7c9de5d45ad6}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1d8da50a-8862-4d98-888c-4f86f648f013}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="iASL Source Files">
+      <UniqueIdentifier>{07557dde-9dc6-4b50-967b-71b5601c5bda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iASL Source Files\Compiler Parsers">
+      <UniqueIdentifier>{64367542-6984-4856-bb43-7a06fa1297a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iASL Source Files\Compiler Lexers">
+      <UniqueIdentifier>{9c2cf15a-ffa6-4ac0-923d-0438ea6f0109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iASL Source Files\Compiler">
+      <UniqueIdentifier>{de57d7fb-1520-46e9-9207-1d2a081d38f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iASL Source Files\DataCompiler">
+      <UniqueIdentifier>{bceab8f7-d910-4070-bb5a-09301127b3fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iASL Source Files\Intermediate">
+      <UniqueIdentifier>{683086c3-eb4a-482e-a773-8669a05eba27}</UniqueIdentifier>
+      <Extensions>*.c, *.h</Extensions>
+    </Filter>
+    <Filter Include="iASL Source Files\Preprocessor">
+      <UniqueIdentifier>{ae0e62c0-173b-44da-bda2-ae7a94451cde}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\components\utilities\utaddress.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utalloc.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utbuffer.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utcache.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utcopy.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utdebug.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utdecode.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utdelete.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\uterror.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utexcep.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utfileio.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utglobal.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\uthex.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utinit.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utlock.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utmath.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utmisc.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utmutex.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utobject.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utownerid.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utpredef.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utprint.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utresrc.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utstate.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utstring.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utuuid.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utxface.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utxferror.c">
+      <Filter>ACPICA Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsaccess.c">
+      <Filter>ACPICA Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsalloc.c">
+      <Filter>ACPICA Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsdump.c">
+      <Filter>ACPICA Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsnames.c">
+      <Filter>ACPICA Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsobject.c">
+      <Filter>ACPICA Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\NAMESPACE\nsparse.c">
+      <Filter>ACPICA Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nssearch.c">
+      <Filter>ACPICA Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsutils.c">
+      <Filter>ACPICA Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nswalk.c">
+      <Filter>ACPICA Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\NAMESPACE\nsxfobj.c">
+      <Filter>ACPICA Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\DEBUGGER\dbfileio.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\disassembler\dmbuffer.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\disassembler\dmcstyle.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\disassembler\dmdeferred.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\disassembler\dmnames.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SOURCE\COMPONENTS\disassembler\dmobject.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\disassembler\dmopcode.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\disassembler\dmresrc.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\disassembler\dmresrcl.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\disassembler\dmresrcl2.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\disassembler\dmresrcs.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\Disassembler\dmutils.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\disassembler\dmwalk.c">
+      <Filter>ACPICA Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbdata.c">
+      <Filter>ACPICA Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbfadt.c">
+      <Filter>ACPICA Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\tables\tbinstal.c">
+      <Filter>ACPICA Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbprint.c">
+      <Filter>ACPICA Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COMPONENTS\tables\tbutils.c">
+      <Filter>ACPICA Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbxface.c">
+      <Filter>ACPICA Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exconvrt.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\excreate.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exdump.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exmisc.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exmutex.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exnames.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exoparg1.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exoparg2.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exoparg3.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exoparg6.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exprep.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exregion.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exresnte.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exresolv.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exresop.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exstore.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exstoren.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exstorob.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exsystem.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exutils.c">
+      <Filter>ACPICA Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psargs.c">
+      <Filter>ACPICA Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psloop.c">
+      <Filter>ACPICA Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psobject.c">
+      <Filter>ACPICA Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psopcode.c">
+      <Filter>ACPICA Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psopinfo.c">
+      <Filter>ACPICA Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psparse.c">
+      <Filter>ACPICA Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psscope.c">
+      <Filter>ACPICA Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\pstree.c">
+      <Filter>ACPICA Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psutils.c">
+      <Filter>ACPICA Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\pswalk.c">
+      <Filter>ACPICA Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dsargs.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dscontrol.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dsfield.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dsobject.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dsopcode.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dsutils.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dswexec.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dswload.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dswload2.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dswscope.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dswstate.c">
+      <Filter>ACPICA Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\adfile.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\adisasm.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\adwalk.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\ahids.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\ahpredef.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\ahtable.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\ahuuids.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\cmfsize.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\dmextern.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\dmrestag.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\dmtable.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\dmtbdump.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\dmtbinfo.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\getopt.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\service_layers\oslibcfs.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\service_layers\oswindir.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\service_layers\oswinxf.c">
+      <Filter>ACPICA Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslanalyze.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslascii.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslbtypes.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslcodegen.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslcompile.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslerror.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslfileio.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslfiles.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslfold.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslhex.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\asllength.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\asllisting.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\asllistsup.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslload.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\asllookup.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslmain.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslmap.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslmapenter.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslmapoutput.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslmaputils.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslmessages.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslmethod.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslnamesp.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\asloffset.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslopcodes.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\asloperands.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslopt.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\asloptions.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslpredef.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslprepkg.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslprintf.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslprune.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslresource.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslrestype1.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslrestype1i.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslrestype2.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslrestype2d.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslrestype2e.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslrestype2q.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslrestype2s.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslrestype2w.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslstartup.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslstubs.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\asltransform.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\asltree.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslutils.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\asluuid.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslwalks.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\aslxref.c">
+      <Filter>iASL Source Files\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\dtcompile.c">
+      <Filter>iASL Source Files\DataCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\dtexpress.c">
+      <Filter>iASL Source Files\DataCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\dtfield.c">
+      <Filter>iASL Source Files\DataCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\dtio.c">
+      <Filter>iASL Source Files\DataCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\dtsubtable.c">
+      <Filter>iASL Source Files\DataCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\dttable.c">
+      <Filter>iASL Source Files\DataCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\dttemplate.c">
+      <Filter>iASL Source Files\DataCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\dtutils.c">
+      <Filter>iASL Source Files\DataCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompiler\AslCompiler.l.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompiler\AslCompiler.y.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompilerDebug\AslCompilerDebug.l.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompilerDebug\AslCompilerDebug.y.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompiler\dtparser.l.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompiler\dtparser.y.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompilerDebug\DtParserDebug.l.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompilerDebug\DtParserDebug.y.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompiler\prparser.l.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompiler\prparser.y.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompilerDebug\PrParserDebug.l.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="AslCompilerDebug\PrParserDebug.y.c">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\prexpress.c">
+      <Filter>iASL Source Files\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\prmacros.c">
+      <Filter>iASL Source Files\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\prscan.c">
+      <Filter>iASL Source Files\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\compiler\prutils.c">
+      <Filter>iASL Source Files\Preprocessor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\compiler\aslcompiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\compiler\asldefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\compiler\aslglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\compiler\aslmessages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\compiler\asltypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\compiler\dtcompiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\compiler\dttemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\compiler\preprocess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\source\compiler\aslrules.y">
+      <Filter>iASL Source Files\Compiler Parsers</Filter>
+    </None>
+    <None Include="..\..\source\compiler\aslsupport.y">
+      <Filter>iASL Source Files\Compiler Parsers</Filter>
+    </None>
+    <None Include="..\..\source\compiler\asltokens.y">
+      <Filter>iASL Source Files\Compiler Parsers</Filter>
+    </None>
+    <None Include="..\..\source\compiler\asltypes.y">
+      <Filter>iASL Source Files\Compiler Parsers</Filter>
+    </None>
+    <None Include="..\..\source\compiler\aslsupport.l">
+      <Filter>iASL Source Files\Compiler Lexers</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\source\compiler\aslparser.y">
+      <Filter>iASL Source Files\Compiler Parsers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\source\compiler\dtparser.y">
+      <Filter>iASL Source Files\Compiler Parsers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\source\compiler\prparser.y">
+      <Filter>iASL Source Files\Compiler Parsers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\source\compiler\aslcompiler.l">
+      <Filter>iASL Source Files\Compiler Lexers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\source\compiler\dtparser.l">
+      <Filter>iASL Source Files\Compiler Lexers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\source\compiler\prparser.l">
+      <Filter>iASL Source Files\Compiler Lexers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AslCompiler\AslCompiler.y">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AslCompilerDebug\AslCompilerDebug.y">
+      <Filter>iASL Source Files\Intermediate</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

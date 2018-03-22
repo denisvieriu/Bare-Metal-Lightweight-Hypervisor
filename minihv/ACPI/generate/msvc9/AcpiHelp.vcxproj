@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{543CE235-637F-4302-BCD4-02C08A4277D9}</ProjectGuid>
+    <RootNamespace>AcpiHelp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\AcpiHelpDebug\</OutDir>
+    <IntDir>.\AcpiHelpDebug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\AcpiHelp\</OutDir>
+    <IntDir>.\AcpiHelp\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>/acpica/generate/msvc/AcpiHelpDebug/AcpiHelp.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\source\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ACPI_HELP_APP;_DEBUG;WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+      <PrecompiledHeaderOutputFile>.\AcpiHelpDebug\AcpiHelp.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\AcpiHelpDebug\</AssemblerListingLocation>
+      <ObjectFileName>.\AcpiHelpDebug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\AcpiHelpDebug\</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Message>Checking existence of acpi/components/libraries directory</Message>
+      <Command>if NOT EXIST ..\..\libraries mkdir ..\..\libraries</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalOptions>/out:".\AcpiHelpDebug\AcpiHelp.exe" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>.\AcpiHelpDebug\AcpiHelp.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\AcpiHelpDebug\AcpiHelp.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\AcpiHelpDebug\AcpiHelp.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copy AcpiHelpDebug.exe to Libraries (DEBUG)</Message>
+      <Command>copy AcpiHelpdebug\AcpiHelp.exe ..\..\libraries\AcpiHelpDebug.exe
+dir ..\..\libraries\AcpiHelpdebug.exe
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>/acpica/generate/msvc/AcpiHelp/AcpiHelp.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\source\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ACPI_HELP_APP;NDEBUG;WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+      <PrecompiledHeaderOutputFile>.\AcpiHelp\AcpiHelp.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\AcpiHelp\</AssemblerListingLocation>
+      <ObjectFileName>.\AcpiHelp\</ObjectFileName>
+      <ProgramDataBaseFileName>.\AcpiHelp\</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CallingConvention>FastCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Message>Checking existence of acpi/libraries directory</Message>
+      <Command>if NOT EXIST ..\..\libraries mkdir ..\..\libraries</Command>
+    </PreLinkEvent>
+    <Link>
+      <OutputFile>.\AcpiHelp\AcpiHelp.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\AcpiHelp\AcpiHelp.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copy AcpiHelp.exe to Libraries</Message>
+      <Command>copy AcpiHelp\AcpiHelp.exe ..\..\libraries\AcpiHelp.exe
+dir ..\..\libraries\AcpiHelp.exe
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\common\ahids.c" />
+    <ClCompile Include="..\..\source\common\ahpredef.c" />
+    <ClCompile Include="..\..\source\common\ahtable.c" />
+    <ClCompile Include="..\..\source\common\ahuuids.c" />
+    <ClCompile Include="..\..\source\common\getopt.c" />
+    <ClCompile Include="..\..\source\components\utilities\utdebug.c" />
+    <ClCompile Include="..\..\source\components\utilities\utexcep.c" />
+    <ClCompile Include="..\..\source\components\utilities\utglobal.c" />
+    <ClCompile Include="..\..\source\components\utilities\uthex.c" />
+    <ClCompile Include="..\..\source\components\utilities\utmath.c" />
+    <ClCompile Include="..\..\source\components\utilities\utpredef.c" />
+    <ClCompile Include="..\..\source\components\utilities\utprint.c" />
+    <ClCompile Include="..\..\source\components\utilities\utuuid.c" />
+    <ClCompile Include="..\..\source\os_specific\service_layers\oslibcfs.c" />
+    <ClCompile Include="..\..\source\os_specific\service_layers\oswinxf.c">
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DisableLanguageExtensions>
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</DisableLanguageExtensions>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\acpihelp\ahamlops.c" />
+    <ClCompile Include="..\..\source\tools\acpihelp\ahaslkey.c" />
+    <ClCompile Include="..\..\source\tools\acpihelp\ahaslops.c" />
+    <ClCompile Include="..\..\source\tools\acpihelp\ahdecode.c">
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DisableLanguageExtensions>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AssemblerOutput>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\acpihelp\ahmain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\include\acuuid.h" />
+    <ClInclude Include="..\..\source\tools\acpihelp\acpihelp.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

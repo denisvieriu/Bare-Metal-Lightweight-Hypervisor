@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AcpiBin">
+      <UniqueIdentifier>{c6c38d7a-d3df-4135-8d4d-5e6d200ede58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcpiExec">
+      <UniqueIdentifier>{1f9d3ba8-da18-4bcf-8d52-3a1350d169e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcpiHelp">
+      <UniqueIdentifier>{32a5009c-7d7a-4294-870c-bf9640f1117c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcpiNames">
+      <UniqueIdentifier>{164f6ebb-23d3-4606-8efb-18d010aaad11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcpiSrc">
+      <UniqueIdentifier>{d0c815f5-73ad-4a7d-b32e-a6ffb3a6d9e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcpiXtract">
+      <UniqueIdentifier>{91050442-4104-4075-a466-e6927a89adff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AslCompiler">
+      <UniqueIdentifier>{76c592b3-7c96-40cd-a239-7e825c8a3fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AslTestSuite">
+      <UniqueIdentifier>{d123297a-fc15-4439-b6a7-a4d86bebee45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generate">
+      <UniqueIdentifier>{06e6927f-85b5-47f9-881b-092364fb2706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TopLevel">
+      <UniqueIdentifier>{dfc68cc7-1c80-4fb8-84dd-8682f6123a28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Templates">
+      <UniqueIdentifier>{aec7305f-70e6-40fe-ac91-66b56726bf69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcpiDump">
+      <UniqueIdentifier>{365fa59f-541f-4d56-9c6a-79c4a112f4d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcpiExamples">
+      <UniqueIdentifier>{e78929e6-3e0b-492b-9745-cbe0f9551ed0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\tests\aslts\Makefile">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\aslts\Makefile.def">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\aslts\Makefile.switch">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\unix\Makefile">
+      <Filter>Generate</Filter>
+    </None>
+    <None Include="..\unix\Makefile.common">
+      <Filter>Generate</Filter>
+    </None>
+    <None Include="..\unix\Makefile.config">
+      <Filter>Generate</Filter>
+    </None>
+    <None Include="..\unix\Makefile.rules">
+      <Filter>Generate</Filter>
+    </None>
+    <None Include="..\..\Makefile">
+      <Filter>TopLevel</Filter>
+    </None>
+    <None Include="..\..\tests\templates\Makefile">
+      <Filter>Templates</Filter>
+    </None>
+    <None Include="..\unix\acpidump\Makefile">
+      <Filter>AcpiDump</Filter>
+    </None>
+    <None Include="..\unix\acpiexamples\Makefile">
+      <Filter>AcpiExamples</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\unix\readme.txt">
+      <Filter>Generate</Filter>
+    </Text>
+    <Text Include="readme.txt">
+      <Filter>TopLevel</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\unix\acpibin\Makefile">
+      <Filter>AcpiBin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\unix\acpiexec\Makefile">
+      <Filter>AcpiExec</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\unix\acpihelp\Makefile">
+      <Filter>AcpiHelp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\unix\acpinames\Makefile">
+      <Filter>AcpiNames</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\unix\acpisrc\Makefile">
+      <Filter>AcpiSrc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\unix\acpixtract\Makefile">
+      <Filter>AcpiXtract</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\unix\iasl\Makefile">
+      <Filter>AslCompiler</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

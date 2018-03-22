@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1734f58e-628c-4191-9d4b-63acd49f1faf}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AcpiSrc">
+      <UniqueIdentifier>{0b2db335-78d5-40fe-a050-35af53f8e4c6}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{1c2edd90-8cc9-400e-bd7f-e0a1ba6974bf}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{c9311859-d74b-4506-8385-6a83c29c655e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{37b8fd44-351e-4085-a0a7-58b7c43480ab}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\TOOLS\acpisrc\ascase.c">
+      <Filter>Source Files\AcpiSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\AcpiSrc\asconvrt.c">
+      <Filter>Source Files\AcpiSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\AcpiSrc\asfile.c">
+      <Filter>Source Files\AcpiSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\AcpiSrc\asmain.c">
+      <Filter>Source Files\AcpiSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\TOOLS\acpisrc\asremove.c">
+      <Filter>Source Files\AcpiSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\acpisrc\astable.c">
+      <Filter>Source Files\AcpiSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\AcpiSrc\asutils.c">
+      <Filter>Source Files\AcpiSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\cmfsize.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\getopt.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\service_layers\oslibcfs.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\SERVICE_LAYERS\oswindir.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\service_layers\oswinxf.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utdebug.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utexcep.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utglobal.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utmath.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utprint.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utxferror.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\tools\AcpiSrc\acpisrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EA88984C-EF04-4FC8-BE6C-BFBDF7D78852}</ProjectGuid>
+    <RootNamespace>minihvex</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(SolutionDir)\tools\vsyasm\vsyasm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)Sources;$(SourcePath)</SourcePath>
+    <TargetExt>.bin</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)Sources;$(SourcePath)</SourcePath>
+    <TargetExt>.bin</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)Sources;$(SourcePath)</SourcePath>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</IntDir>
+    <TargetExt>.bin</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)Sources;$(SourcePath)</SourcePath>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</IntDir>
+    <TargetExt>.bin</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <YASM>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </YASM>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>X64;AMD64;DEBUG;_DEBUG;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <BrowseInformation />
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalOptions>/ALIGN:0x200 /IGNORE:4108 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName).bin</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Native</SubSystem>
+      <EntryPointSymbol>__MultiBootEntryPoint</EntryPointSymbol>
+      <BaseAddress>0x0000010000000000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <MergeSections>.boot=.text</MergeSections>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(SolutionDir)upload_to_pxe.cmd"  $(ProjectName) "$(ProjectDir)" $(PlatformName) $(ConfigurationName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>X64;AMD64;NDEBUG;RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <BrowseInformation />
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ALIGN:0x200 /IGNORE:4108 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName).bin</OutputFile>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Native</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>__MultiBootEntryPoint</EntryPointSymbol>
+      <BaseAddress>0x0000010000000000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <MergeSections>.boot=.text</MergeSections>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(SolutionDir)upload_to_pxe.cmd"  $(ProjectName) "$(ProjectDir)" $(PlatformName) $(ConfigurationName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).bin</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Native</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <EntryPointSymbol>__MultiBootEntryPoint</EntryPointSymbol>
+      <BaseAddress>0x0000010000000000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <MergeSections>.boot=.text</MergeSections>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <ClCompile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>"$(SolutionDir)upload_to_pxe.cmd"  $(ProjectName) "$(ProjectDir)" $(PlatformName) $(ConfigurationName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).bin</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Native</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <EntryPointSymbol>__MultiBootEntryPoint</EntryPointSymbol>
+      <BaseAddress>0x0000010000000000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <MergeSections>.boot=.text</MergeSections>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <ClCompile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>"$(SolutionDir)upload_to_pxe.cmd"  $(ProjectName) "$(ProjectDir)" $(PlatformName) $(ConfigurationName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\cfgdirs.cmd" />
+    <None Include="..\failmsg.cmd" />
+    <None Include="..\upload_to_pxe.cmd" />
+    <None Include="uefi_interf.h" />
+    <None Include="_utils.mac" />
+  </ItemGroup>
+  <ItemGroup>
+    <YASM Include="_entry.asm" />
+    <YASM Include="_guest.asm" />
+    <YASM Include="_init32.asm" />
+    <YASM Include="_isr.asm" />
+    <YASM Include="_trampoline.asm" />
+    <YASM Include="_utils.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acpi.c" />
+    <ClCompile Include="acpi_interf.c" />
+    <ClCompile Include="cconsole.c" />
+    <ClCompile Include="cmd.c" />
+    <ClCompile Include="console.c" />
+    <ClCompile Include="cpu.c" />
+    <ClCompile Include="cpuid.c" />
+    <ClCompile Include="crt.c" />
+    <ClCompile Include="dbcmds.c" />
+    <ClCompile Include="dbconvert.c" />
+    <ClCompile Include="dbdisply.c" />
+    <ClCompile Include="dbexec.c" />
+    <ClCompile Include="dbfileio.c" />
+    <ClCompile Include="dbglog.c" />
+    <ClCompile Include="dbhistry.c" />
+    <ClCompile Include="dbinput.c" />
+    <ClCompile Include="dbmethod.c" />
+    <ClCompile Include="dbnames.c" />
+    <ClCompile Include="dbstats.c" />
+    <ClCompile Include="dbtest.c" />
+    <ClCompile Include="dbutils.c" />
+    <ClCompile Include="dbxface.c" />
+    <ClCompile Include="decoder.c" />
+    <ClCompile Include="distorm.c" />
+    <ClCompile Include="dmbuffer.c" />
+    <ClCompile Include="dmcstyle.c" />
+    <ClCompile Include="dmdeferred.c" />
+    <ClCompile Include="dmnames.c" />
+    <ClCompile Include="dmobject.c" />
+    <ClCompile Include="dmopcode.c" />
+    <ClCompile Include="dmresrc.c" />
+    <ClCompile Include="dmresrcl.c" />
+    <ClCompile Include="dmresrcl2.c" />
+    <ClCompile Include="dmresrcs.c" />
+    <ClCompile Include="dmutils.c" />
+    <ClCompile Include="dmwalk.c" />
+    <ClCompile Include="driver.c" />
+    <ClCompile Include="dsargs.c" />
+    <ClCompile Include="dscontrol.c" />
+    <ClCompile Include="dsfield.c" />
+    <ClCompile Include="dsinit.c" />
+    <ClCompile Include="dsmethod.c" />
+    <ClCompile Include="dsmthdat.c" />
+    <ClCompile Include="dsobject.c" />
+    <ClCompile Include="dsopcode.c" />
+    <ClCompile Include="dsutils.c" />
+    <ClCompile Include="dswexec.c" />
+    <ClCompile Include="dswload.c" />
+    <ClCompile Include="dswload2.c" />
+    <ClCompile Include="dswscope.c" />
+    <ClCompile Include="dswstate.c" />
+    <ClCompile Include="ept.c" />
+    <ClCompile Include="evevent.c" />
+    <ClCompile Include="evglock.c" />
+    <ClCompile Include="evgpe.c" />
+    <ClCompile Include="evgpeblk.c" />
+    <ClCompile Include="evgpeinit.c" />
+    <ClCompile Include="evgpeutil.c" />
+    <ClCompile Include="evhandler.c" />
+    <ClCompile Include="evmisc.c" />
+    <ClCompile Include="evregion.c" />
+    <ClCompile Include="evrgnini.c" />
+    <ClCompile Include="evsci.c" />
+    <ClCompile Include="evxface.c" />
+    <ClCompile Include="evxfevnt.c" />
+    <ClCompile Include="evxfgpe.c" />
+    <ClCompile Include="evxfregn.c" />
+    <ClCompile Include="exconfig.c" />
+    <ClCompile Include="exconvrt.c" />
+    <ClCompile Include="excreate.c" />
+    <ClCompile Include="exdebug.c" />
+    <ClCompile Include="exdump.c" />
+    <ClCompile Include="exfield.c" />
+    <ClCompile Include="exfldio.c" />
+    <ClCompile Include="exmisc.c" />
+    <ClCompile Include="exmutex.c" />
+    <ClCompile Include="exnames.c" />
+    <ClCompile Include="exoparg1.c" />
+    <ClCompile Include="exoparg2.c" />
+    <ClCompile Include="exoparg3.c" />
+    <ClCompile Include="exoparg6.c" />
+    <ClCompile Include="exprep.c" />
+    <ClCompile Include="exregion.c" />
+    <ClCompile Include="exresnte.c" />
+    <ClCompile Include="exresolv.c" />
+    <ClCompile Include="exresop.c" />
+    <ClCompile Include="exstore.c" />
+    <ClCompile Include="exstoren.c" />
+    <ClCompile Include="exstorob.c" />
+    <ClCompile Include="exsystem.c" />
+    <ClCompile Include="exutils.c" />
+    <ClCompile Include="format.c" />
+    <ClCompile Include="gdt.c" />
+    <ClCompile Include="hwacpi.c" />
+    <ClCompile Include="hwesleep.c" />
+    <ClCompile Include="hwgpe.c" />
+    <ClCompile Include="hwpci.c" />
+    <ClCompile Include="hwregs.c" />
+    <ClCompile Include="hwsleep.c" />
+    <ClCompile Include="hwtimer.c" />
+    <ClCompile Include="hwvalid.c" />
+    <ClCompile Include="hwxface.c" />
+    <ClCompile Include="hwxfsleep.c" />
+    <ClCompile Include="idt.c" />
+    <ClCompile Include="idt_handler.c" />
+    <ClCompile Include="init64.c" />
+    <ClCompile Include="instructions.c" />
+    <ClCompile Include="insts.c" />
+    <ClCompile Include="local_apic.c" />
+    <ClCompile Include="list.c" />
+    <ClCompile Include="map.c" />
+    <ClCompile Include="memzero.c" />
+    <ClCompile Include="mhvvmx.c" />
+    <ClCompile Include="mhxvmxhandler.c" />
+    <ClCompile Include="mnemonics.c" />
+    <ClCompile Include="mtrr.c" />
+    <ClCompile Include="nsaccess.c" />
+    <ClCompile Include="nsalloc.c" />
+    <ClCompile Include="nsarguments.c" />
+    <ClCompile Include="nsconvert.c" />
+    <ClCompile Include="nsdump.c" />
+    <ClCompile Include="nsdumpdv.c" />
+    <ClCompile Include="nseval.c" />
+    <ClCompile Include="nsinit.c" />
+    <ClCompile Include="nsload.c" />
+    <ClCompile Include="nsnames.c" />
+    <ClCompile Include="nsobject.c" />
+    <ClCompile Include="nsparse.c" />
+    <ClCompile Include="nspredef.c" />
+    <ClCompile Include="nsprepkg.c" />
+    <ClCompile Include="nsrepair.c" />
+    <ClCompile Include="nsrepair2.c" />
+    <ClCompile Include="nssearch.c" />
+    <ClCompile Include="nsutils.c" />
+    <ClCompile Include="nswalk.c" />
+    <ClCompile Include="nsxfeval.c" />
+    <ClCompile Include="nsxfname.c" />
+    <ClCompile Include="nsxfobj.c" />
+    <ClCompile Include="operands.c" />
+    <ClCompile Include="pcci.c" />
+    <ClCompile Include="pci.c" />
+    <ClCompile Include="pit.c" />
+    <ClCompile Include="prefix.c" />
+    <ClCompile Include="print.c" />
+    <ClCompile Include="psargs.c" />
+    <ClCompile Include="psloop.c" />
+    <ClCompile Include="psobject.c" />
+    <ClCompile Include="psopcode.c" />
+    <ClCompile Include="psopinfo.c" />
+    <ClCompile Include="psparse.c" />
+    <ClCompile Include="psscope.c" />
+    <ClCompile Include="pstree.c" />
+    <ClCompile Include="psutils.c" />
+    <ClCompile Include="pswalk.c" />
+    <ClCompile Include="psxface.c" />
+    <ClCompile Include="random.c" />
+    <ClCompile Include="registry.c" />
+    <ClCompile Include="rsaddr.c" />
+    <ClCompile Include="rscalc.c" />
+    <ClCompile Include="rscreate.c" />
+    <ClCompile Include="rsdump.c" />
+    <ClCompile Include="rsdumpinfo.c" />
+    <ClCompile Include="rsinfo.c" />
+    <ClCompile Include="rsio.c" />
+    <ClCompile Include="rsirq.c" />
+    <ClCompile Include="rslist.c" />
+    <ClCompile Include="rsmemory.c" />
+    <ClCompile Include="rsmisc.c" />
+    <ClCompile Include="rsserial.c" />
+    <ClCompile Include="rsutils.c" />
+    <ClCompile Include="rsxface.c" />
+    <ClCompile Include="sleep.c" />
+    <ClCompile Include="spinlock.c" />
+    <ClCompile Include="ssnprintf.c" />
+    <ClCompile Include="sstring.c" />
+    <ClCompile Include="string.c" />
+    <ClCompile Include="tbdata.c" />
+    <ClCompile Include="tbfadt.c" />
+    <ClCompile Include="tbfind.c" />
+    <ClCompile Include="tbinstal.c" />
+    <ClCompile Include="tbprint.c" />
+    <ClCompile Include="tbutils.c" />
+    <ClCompile Include="tbxface.c" />
+    <ClCompile Include="tbxfload.c" />
+    <ClCompile Include="tbxfroot.c" />
+    <ClCompile Include="textdefs.c" />
+    <ClCompile Include="time.c" />
+    <ClCompile Include="tss.c" />
+    <ClCompile Include="utaddress.c" />
+    <ClCompile Include="utalloc.c" />
+    <ClCompile Include="utbuffer.c" />
+    <ClCompile Include="utcache.c" />
+    <ClCompile Include="utclib.c" />
+    <ClCompile Include="utcopy.c" />
+    <ClCompile Include="utdebug.c" />
+    <ClCompile Include="utdecode.c" />
+    <ClCompile Include="utdelete.c" />
+    <ClCompile Include="uterror.c" />
+    <ClCompile Include="uteval.c" />
+    <ClCompile Include="utexcep.c" />
+    <ClCompile Include="utfileio.c" />
+    <ClCompile Include="utglobal.c" />
+    <ClCompile Include="uthex.c" />
+    <ClCompile Include="utids.c" />
+    <ClCompile Include="utinit.c" />
+    <ClCompile Include="utlock.c" />
+    <ClCompile Include="utmath.c" />
+    <ClCompile Include="utmisc.c" />
+    <ClCompile Include="utmutex.c" />
+    <ClCompile Include="utobject.c" />
+    <ClCompile Include="utosi.c" />
+    <ClCompile Include="utownerid.c" />
+    <ClCompile Include="utpredef.c" />
+    <ClCompile Include="utprint.c" />
+    <ClCompile Include="utresrc.c" />
+    <ClCompile Include="utstate.c" />
+    <ClCompile Include="utstring.c" />
+    <ClCompile Include="uttrack.c" />
+    <ClCompile Include="utuuid.c" />
+    <ClCompile Include="utxface.c" />
+    <ClCompile Include="utxferror.c" />
+    <ClCompile Include="utxfinit.c" />
+    <ClCompile Include="utxfmutex.c" />
+    <ClCompile Include="vga.c" />
+    <ClCompile Include="video_memory_print.c" />
+    <ClCompile Include="vmx.c" />
+    <ClCompile Include="vmx_exit_handler.c" />
+    <ClCompile Include="vvga.c" />
+    <ClCompile Include="wstring.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="acapps.h" />
+    <ClInclude Include="acbuffer.h" />
+    <ClInclude Include="acclib.h" />
+    <ClInclude Include="accommon.h" />
+    <ClInclude Include="acconfig.h" />
+    <ClInclude Include="acdebug.h" />
+    <ClInclude Include="acdisasm.h" />
+    <ClInclude Include="acdispat.h" />
+    <ClInclude Include="acevents.h" />
+    <ClInclude Include="acexcep.h" />
+    <ClInclude Include="acglobal.h" />
+    <ClInclude Include="achware.h" />
+    <ClInclude Include="acinterp.h" />
+    <ClInclude Include="aclocal.h" />
+    <ClInclude Include="acmacros.h" />
+    <ClInclude Include="acnames.h" />
+    <ClInclude Include="acnamesp.h" />
+    <ClInclude Include="acobject.h" />
+    <ClInclude Include="acopcode.h" />
+    <ClInclude Include="acoutput.h" />
+    <ClInclude Include="acparser.h" />
+    <ClInclude Include="acpi.h" />
+    <ClInclude Include="acpica.h" />
+    <ClInclude Include="acpiosxf.h" />
+    <ClInclude Include="acpixf.h" />
+    <ClInclude Include="acpredef.h" />
+    <ClInclude Include="acresrc.h" />
+    <ClInclude Include="acrestyp.h" />
+    <ClInclude Include="acstruct.h" />
+    <ClInclude Include="actables.h" />
+    <ClInclude Include="actbl.h" />
+    <ClInclude Include="actbl1.h" />
+    <ClInclude Include="actbl2.h" />
+    <ClInclude Include="actbl3.h" />
+    <ClInclude Include="actypes.h" />
+    <ClInclude Include="acutils.h" />
+    <ClInclude Include="acuuid.h" />
+    <ClInclude Include="amlcode.h" />
+    <ClInclude Include="amlresrc.h" />
+    <ClInclude Include="ConcurrencySal.h" />
+    <ClInclude Include="cpu.h" />
+    <ClInclude Include="cpuid.h" />
+    <ClInclude Include="ept.h" />
+    <ClInclude Include="error.h" />
+    <ClInclude Include="gdt.h" />
+    <ClInclude Include="idt_handlers.h" />
+    <ClInclude Include="local_apic.h" />
+    <ClInclude Include="llimits.h" />
+    <ClInclude Include="mhvvmx.h" />
+    <ClInclude Include="minihv_status.h" />
+    <ClInclude Include="mtrr.h" />
+    <ClInclude Include="ntstatus.h" />
+    <ClInclude Include="pcci.h" />
+    <ClInclude Include="random.h" />
+    <ClInclude Include="sal.h" />
+    <ClInclude Include="sleep.h" />
+    <ClInclude Include="spinlock.h" />
+    <ClInclude Include="ssnprintf.h" />
+    <ClInclude Include="stdarg.h" />
+    <ClInclude Include="assert.h" />
+    <ClInclude Include="cconsole.h" />
+    <ClInclude Include="cmd.h" />
+    <ClInclude Include="console.h" />
+    <ClInclude Include="crt.h" />
+    <ClInclude Include="dbglog.h" />
+    <ClInclude Include="driver.h" />
+    <ClInclude Include="format.h" />
+    <ClInclude Include="list.h" />
+    <ClInclude Include="lowmem.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="memzero.h" />
+    <ClInclude Include="minihv.h" />
+    <ClInclude Include="pci.h" />
+    <ClInclude Include="pit.h" />
+    <ClInclude Include="print.h" />
+    <ClInclude Include="registry.h" />
+    <ClInclude Include="sstring.h" />
+    <ClInclude Include="string.h" />
+    <ClInclude Include="time.h" />
+    <ClInclude Include="tss.h" />
+    <ClInclude Include="vga.h" />
+    <ClInclude Include="video_memory_print.h" />
+    <ClInclude Include="vmx.h" />
+    <ClInclude Include="vmx_common.h" />
+    <ClInclude Include="vmx_exit_handler.h" />
+    <ClInclude Include="vvga.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(SolutionDir)\tools\vsyasm\vsyasm.targets" />
+  </ImportGroup>
+</Project>

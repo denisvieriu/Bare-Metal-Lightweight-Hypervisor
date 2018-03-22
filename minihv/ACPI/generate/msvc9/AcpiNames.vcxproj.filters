@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d4825339-8132-4599-84c1-6563332587c5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{e8ea8d3a-946a-433b-b13c-7f04d49be255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{3394276b-1684-4320-8da6-ee66ecec765d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tables">
+      <UniqueIdentifier>{085a65f0-e3e0-476d-bd7d-2e0a70cd969a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Namespace">
+      <UniqueIdentifier>{03ee5bcd-c9c9-456e-a066-180322b21899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Parser">
+      <UniqueIdentifier>{269c0f91-4ba5-49f3-bf57-f8fbc1700f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debugger">
+      <UniqueIdentifier>{585209ff-e2a3-4cf3-9519-30a0b9bb70d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dispatcher">
+      <UniqueIdentifier>{ae222417-86bb-4027-9479-74d8cf38dd75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interpreter">
+      <UniqueIdentifier>{89243e75-2a39-452d-b8ae-affc88f1d139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{33f10f9f-ccaf-4081-8aa9-ea645b398891}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\tools\AcpiNames\anmain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\AcpiNames\anstubs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tools\AcpiNames\antables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\cmfsize.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\common\getopt.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\service_layers\oslibcfs.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\os_specific\service_layers\oswinxf.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utaddress.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utalloc.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utbuffer.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utcache.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utdebug.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utdecode.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utdelete.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\uterror.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\uteval.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utexcep.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utfileio.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utglobal.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\uthex.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utids.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utinit.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utlock.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utmath.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utmisc.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utmutex.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utobject.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utosi.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utownerid.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utprint.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utstate.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utstring.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utxface.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utxferror.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\utilities\utxfinit.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbdata.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbfadt.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbfind.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbinstal.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbprint.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbutils.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbxface.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbxfload.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\tables\tbxfroot.c">
+      <Filter>Source Files\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsaccess.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsalloc.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsdump.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsinit.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsload.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsnames.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsobject.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsparse.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nssearch.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsutils.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nswalk.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsxfeval.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsxfname.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\namespace\nsxfobj.c">
+      <Filter>Source Files\Namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psargs.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psloop.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psobject.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psopcode.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psopinfo.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psparse.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psscope.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\pstree.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psutils.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\pswalk.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\parser\psxface.c">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\debugger\dbfileio.c">
+      <Filter>Source Files\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dsfield.c">
+      <Filter>Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dsmthdat.c">
+      <Filter>Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dsobject.c">
+      <Filter>Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dsutils.c">
+      <Filter>Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dswload.c">
+      <Filter>Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dswload2.c">
+      <Filter>Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dswscope.c">
+      <Filter>Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\dispatcher\dswstate.c">
+      <Filter>Source Files\Dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\excreate.c">
+      <Filter>Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exdump.c">
+      <Filter>Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exmutex.c">
+      <Filter>Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exnames.c">
+      <Filter>Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exresnte.c">
+      <Filter>Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exresolv.c">
+      <Filter>Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exsystem.c">
+      <Filter>Source Files\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\components\executer\exutils.c">
+      <Filter>Source Files\Interpreter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\tools\AcpiNames\AcpiNames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Build">
+      <UniqueIdentifier>{7e29bb79-380e-4cf1-9d30-5cb354d6c09e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AslTestSuite">
+      <UniqueIdentifier>{45990460-dc5d-4854-a06f-2837e858323d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MiscTests">
+      <UniqueIdentifier>{3cbdd678-dfa9-41eb-af11-5f0000775e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TopLevel">
+      <UniqueIdentifier>{082208ef-81fc-48a8-9f67-6c2435bace5f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\release\build.sh">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="..\release\release.sh">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="..\release\size.bat">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="..\..\tests\.cygwin">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\.setup">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\aslts.sh">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\aslts\bin\asltsdiffres">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\aslts\bin\asltsrun">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\aslts\bin\common">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\aslts\bin\diffproc">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\aslts\bin\Do">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\aslts\bin\README">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\aslts\bin\settings">
+      <Filter>AslTestSuite</Filter>
+    </None>
+    <None Include="..\..\tests\templates\templates.sh">
+      <Filter>MiscTests</Filter>
+    </None>
+    <None Include="..\..\.gitignore">
+      <Filter>TopLevel</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\release\build.txt">
+      <Filter>Build</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
