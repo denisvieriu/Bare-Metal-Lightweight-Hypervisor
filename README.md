@@ -10,7 +10,7 @@ In case you want to test it, just copy the *.bin file building to your PXE folde
 
 No need to install/bring additional dependencies. It has all ACPICA source files integrated and ready to build.
 
-For logging it support serial logging (most useful one) and VGA logging.
+For logging it supports serial logging (most useful one) and VGA logging.
 
 ## License
 
